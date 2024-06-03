@@ -1,0 +1,16 @@
+.right-panel {
+  height: auto;
+  width: 500px;
+
+  .chat-section {
+    width: auto;
+
+    .chat-container {
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 5px;
+      height: 400px;
+      width: 300px;
+    }
+  }
+}
