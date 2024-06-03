@@ -12,11 +12,21 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_06_03_132415) do
   create_table "users", force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
+    t.string "email", null: false
+    t.string "encrypted_password", null: false
+    t.string "pseudo"
+    t.integer "lat", default: 0
+    t.integer "long", default: 0
+    t.string "avatar"
+    t.float "exp", default: 0.0
+    t.integer "lvl", default: 1
+    t.integer "fsu", default: 0
+    t.integer "ast", default: 0
+    t.integer "pvp", default: 0
+    t.integer "npc", default: 0
+    t.boolean "banned", default: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

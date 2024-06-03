@@ -1,1 +1,39 @@
 <h1>etst</h1>
+
+<% if user_signed_in? %>
+
+  <%= link_to play_path do %>
+    <button class="btn-btn primary">PLAY</button>
+  <% end %>
+
+  <% else %>
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#playModal">PLAY</button>
+
+    <div class="modal fade" id="playModal" tabindex="-1" role="dialog" aria-labelledby="playModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title" id="playModalLongTitle">Login</h5>
+          </div>
+
+          <div class="modal-body">
+            <div class="connection-form">
+              <p>form de connection</p>
+            </div>
+
+            <div class="new-acc d-flex">
+              <h6>You're new,</h6>
+              <%= link_to new_user_registration_path do %>
+                <h6>create your account</h6>
+              <% end %>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+<% end %>
