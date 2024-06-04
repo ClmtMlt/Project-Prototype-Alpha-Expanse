@@ -1,16 +1,98 @@
 .right-panel {
-  height: auto;
-  width: 500px;
+  height: 100%;
+  width: 30%;
+  padding-left: 10px;
+
+  .right-top-section {
+    height: 20%;
+
+    .other-action-panel {
+
+    }
+
+    .ship-section {
+      color: white;
+      padding-top: 10px;
+
+      .ship-status {
+
+        .shield-status {
+
+          .shield-numbers {
+
+          }
+
+          .shield-gauge {
+
+            p {
+              font-size: 8px;
+            }
+          }
+        }
+
+        .hull-status {
+
+          .hull-numbers {
+
+          }
+
+          .hull-gauge {
+
+            p {
+              font-size: 8px;
+            }
+          }
+        }
+
+        .fuel-status {
+
+          .fuel-numbers {
+
+          }
+
+          .fuel-gauge {
+
+            p {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .map-box-section {
+    height: 25%;
+
+    .map-box-container {
+      background-color: black;
+      border: 2px solid white;
+      border-radius: 5px;
+      height: 100%;
+      position: relative;
+
+    }
+  }
 
   .chat-section {
-    width: auto;
+    width: 100%;
+    height: 45%;
 
     .chat-container {
       background-color: black;
       border: 2px solid white;
       border-radius: 5px;
-      height: 400px;
-      width: 300px;
+      height: 100%;
+      position: relative;
+
+      .chat-filters {
+        position: absolute;
+        right: 0%;
+      }
+
+      .all-messages {
+
+      }
     }
   }
 }

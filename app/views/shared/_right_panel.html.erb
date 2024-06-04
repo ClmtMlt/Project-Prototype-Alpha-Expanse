@@ -1,12 +1,8 @@
-<div class="right-panel d-flex-column">
+<div class="right-panel d-flex flex-column justify-content-between">
 
-    <div class="chat-section">
-      <div class="chat-container">
-        <h4>Chat</h4>
-      </div>
-    </div>
+  <div class="right-top-section d-flex flex-column justify-content-between">
 
-    <div class="other-action-panel">
+    <div class="other-action-panel d-flex justify-content-between">
 
       <div class="user-box-icon">
         <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#fitting">fitting</button>
@@ -25,10 +21,71 @@
 
     </div>
 
-    <div class="map-box-section">
-      <div class="block">
-        mini map
+    <div class="ship-section">
+
+      <div class="ship-status d-flex flex-column justify-content-between">
+
+        <div class="shield-status d-flex flex-column justify-content-between">
+          <div class="shield-numbers d-flex justify-content-between">
+            <h5>Shield hitpoints</h5>
+            <h5>montant</h5>
+          </div>
+          <div class="shield-gauge">
+            <p>display la barre de hp de shield du ship avec bleu vert jaune</p>
+          </div>
+        </div>
+
+        <div class="hull-status d-flex flex-column justify-content-between">
+          <div class="hull-numbers d-flex justify-content-between">
+            <h5>Hull hitpoints</h5>
+            <h5>montant</h5>
+          </div>
+          <div class="hull-gauge">
+            <p>display la barre de hp de hull du ship avec bleu vert jaune</p>
+          </div>
+        </div>
+
+        <div class="fuel-status d-flex flex-column justify-content-between">
+          <div class="fuel-numbers d-flex justify-content-between">
+            <h5>Fuel</h5>
+            <h5>Montant</h5>
+          </div>
+          <div class="fuel-gauge">
+            <p>display la barre de carbu du ship avec bleu vert jaune</p>
+          </div>
+
+        </div>
+
       </div>
+
     </div>
 
   </div>
+
+  <div class="map-box-section">
+    <div class="map-box-container">
+      mini map
+    </div>
+  </div>
+
+  <div class="chat-section">
+
+    <div class="chat-container d-flex flex-column justify-content-between">
+
+      <div class="chat-filters">
+        <button>Filters</button>
+      </div>
+
+      <div class="all-messages">
+        les messages défilent dans la boîte à la suite, avec pseudo et contenu
+      </div>
+
+      <div class="send-message-section">
+        <button>Send message</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
